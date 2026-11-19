@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://pickledbee.github.io/fridgepaper/sitemap.xml

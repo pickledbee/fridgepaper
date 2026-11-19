@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Allowance Calculator: How Much Allowance by Age (Save, Spend, Give) | FridgePaper</title>
+<meta name="description" content="Free allowance calculator for kids. Pick a dollar amount per year of age and see weekly, monthly and yearly allowance plus a save, spend and give split.">
+<link rel="canonical" href="https://pickledbee.github.io/fridgepaper/tools/allowance-calculator.html">
+<meta property="og:title" content="Allowance Calculator: How Much Allowance by Age (Save, Spend, Give) | FridgePaper">
+<meta property="og:description" content="Free allowance calculator for kids. Pick a dollar amount per year of age and see weekly, monthly and yearly allowance plus a save, spend and give split.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,800&family=Nunito:wght@400;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/style.css">
+<!-- ADSENSE: paste your AdSense script tag on the next line once approved -->
+
+</head>
+<body>
+<header class="site-header no-print">
+  <a class="logo" href="../index.html"><span class="magnet"></span><span>Fridge<b>Paper</b></span></a>
+  <nav><a href="../printables/index.html">Printables</a><a href="../tools/index.html">Free Tools</a><a href="../about.html">About</a></nav>
+</header>
+<main>
+
+<article class="post">
+  <div class="no-print">
+    <p class="crumbs"><a href="../index.html">Home</a> › <a href="index.html">Free Tools</a></p>
+    <h1>Allowance Calculator: How Much Allowance by Age (Save, Spend, Give)</h1>
+    <p>A popular rule of thumb is $1 a week for every year of a child's age, but every family is different. Set your own rate and split, and see what each child gets.</p>
+  </div>
+  
+<div class="tool no-print">
+  <label>Kids' ages (separate with commas) <input id="aAges" value="6, 9, 12"></label>
+  <label>Dollars per year of age, per week <input id="aRate" type="number" min="0" step="0.25" value="1"></label>
+  <label>Save % <input id="aSave" type="number" min="0" max="100" value="40"></label>
+  <label>Give % <input id="aGive" type="number" min="0" max="100" value="10"></label>
+  <p class="small wide">Spend gets whatever is left.</p>
+</div>
+<div id="aOut"></div>
+<script>
+(function(){
+  var ids=["aAges","aRate","aSave","aGive"];
+  function $(x){return "$"+x.toFixed(2);}
+  function calc(){
+    var ages=document.getElementById("aAges").value.split(",").map(function(s){return parseFloat(s);}).filter(function(x){return isFinite(x)&&x>0&&x<25;}).slice(0,10);
+    var rate=Math.max(0,parseFloat(document.getElementById("aRate").value)||0);
+    var sv=Math.max(0,Math.min(100,parseFloat(document.getElementById("aSave").value)||0));
+    var gv=Math.max(0,Math.min(100-sv,parseFloat(document.getElementById("aGive").value)||0));
+    var sp=100-sv-gv, tot=0;
+    var rows=ages.map(function(a,i){var w=a*rate;tot+=w;return "<tr><td>Child "+(i+1)+" (age "+a+")</td><td>"+$(w)+"</td><td>"+$(w*52/12)+"</td><td>"+$(w*52)+"</td><td>"+$(w*sv/100)+" / "+$(w*sp/100)+" / "+$(w*gv/100)+"</td></tr>";}).join("");
+    document.getElementById("aOut").innerHTML='<div class="table-wrap"><table class="calc"><thead><tr><th>Child</th><th>Weekly</th><th>Monthly</th><th>Yearly</th><th>Save / Spend / Give (weekly)</th></tr></thead><tbody>'+rows+'</tbody><tfoot><tr><th>All kids</th><th>'+$(tot)+'</th><th>'+$(tot*52/12)+'</th><th>'+$(tot*52)+'</th><th>Split '+sv+'% / '+sp+'% / '+gv+'%</th></tr></tfoot></table></div>';
+  }
+  ids.forEach(function(i){document.getElementById(i).addEventListener("input",calc);});
+  calc();
+})();
+</script>
+  <div class="no-print">
+    <div class="ad-slot no-print" aria-hidden="true"><!-- AD SLOT --></div>
+    <h2>How to use it</h2>
+    <ol><li>List each child's age, separated by commas.</li><li>Choose a rate. $1 per year of age per week is a common starting point; many families use 50 cents.</li><li>Decide how much goes to saving and giving. The rest is for spending.</li><li>Pay on the same day every week so it becomes a habit.</li><li>Tying allowance to chores? Pair it with a <a href="chore-chart-maker.html">custom chore chart</a>.</li></ol>
+    <section class="supplies no-print"><h2>Supplies that make this easier</h2><ul><li><a href="https://www.amazon.com/s?k=save+spend+give+piggy+bank&tag=bumblepickleb-20" rel="sponsored noopener" target="_blank">Save / Spend / Give piggy bank</a> three slots, perfect for this split</li><li><a href="https://www.amazon.com/s?k=kids+books+about+money&tag=bumblepickleb-20" rel="sponsored noopener" target="_blank">Kids' books about money</a> </li><li><a href="https://www.amazon.com/s?k=clear+jars+with+lids&tag=bumblepickleb-20" rel="sponsored noopener" target="_blank">Clear jars with lids</a> a cheap DIY three-jar system</li></ul><p class="small">These are affiliate links. If you buy through them, FridgePaper may earn a small commission at no extra cost to you.</p></section>
+    <div class="ad-slot no-print" aria-hidden="true"><!-- AD SLOT --></div>
+    <h2>More free tools</h2>
+    <ul class="more"><li><a href="chore-chart-maker.html">Chore Chart Maker</a></li><li><a href="grocery-budget-calculator.html">Grocery Budget Calculator</a></li><li><a href="../printables/index.html">All free printables</a></li></ul>
+  </div>
+</article>
+</main>
+<footer class="site-footer no-print">
+  <p><b>FridgePaper</b> makes free printables and simple tools for busy families.</p>
+  <p><a href="../about.html">About</a> · <a href="../contact.html">Contact</a> · <a href="../privacy.html">Privacy Policy</a></p>
+  <p class="small">As an Amazon Associate, FridgePaper earns from qualifying purchases. © 2026 FridgePaper, a Pickled Bee Studios LLC site.</p>
+</footer>
+</body>
+</html>

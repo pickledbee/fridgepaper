@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Grocery Budget Calculator: Weekly, Per Person and Per Meal | FridgePaper</title>
+<meta name="description" content="Free grocery budget calculator. Enter your monthly grocery budget and family size to see your weekly budget, cost per person per day, and cost per meal.">
+<link rel="canonical" href="https://pickledbee.github.io/fridgepaper/tools/grocery-budget-calculator.html">
+<meta property="og:title" content="Grocery Budget Calculator: Weekly, Per Person and Per Meal | FridgePaper">
+<meta property="og:description" content="Free grocery budget calculator. Enter your monthly grocery budget and family size to see your weekly budget, cost per person per day, and cost per meal.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,800&family=Nunito:wght@400;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/style.css">
+<!-- ADSENSE: paste your AdSense script tag on the next line once approved -->
+
+</head>
+<body>
+<header class="site-header no-print">
+  <a class="logo" href="../index.html"><span class="magnet"></span><span>Fridge<b>Paper</b></span></a>
+  <nav><a href="../printables/index.html">Printables</a><a href="../tools/index.html">Free Tools</a><a href="../about.html">About</a></nav>
+</header>
+<main>
+
+<article class="post">
+  <div class="no-print">
+    <p class="crumbs"><a href="../index.html">Home</a> › <a href="index.html">Free Tools</a></p>
+    <h1>Grocery Budget Calculator: Weekly, Per Person and Per Meal</h1>
+    <p>Enter your monthly grocery budget and how many people you feed. The calculator breaks it down into a weekly amount, a daily amount per person, and what each home-cooked meal can cost.</p>
+  </div>
+  
+<div class="tool no-print">
+  <label>Monthly grocery budget ($) <input id="gBudget" type="number" min="0" step="10" value="900"></label>
+  <label>People in your household <input id="gPeople" type="number" min="1" max="20" value="4"></label>
+  <label>Meals at home per person, per week <input id="gMeals" type="number" min="1" max="35" value="18"></label>
+  <label>Non-food share (paper, cleaning) % <input id="gNonFood" type="number" min="0" max="80" value="10"></label>
+</div>
+<div class="results" id="gOut"></div>
+<script>
+(function(){
+  var ids=["gBudget","gPeople","gMeals","gNonFood"];
+  function n(i){var x=parseFloat(document.getElementById(i).value);return isFinite(x)?x:0;}
+  function $(x){return "$"+x.toFixed(2);}
+  function calc(){
+    var b=Math.max(0,n("gBudget")),p=Math.max(1,n("gPeople")),m=Math.max(1,n("gMeals")),nf=Math.min(80,Math.max(0,n("gNonFood")));
+    var weeks=52/12, food=b*(1-nf/100);
+    var weekly=b/weeks, foodWeekly=food/weeks;
+    var perPersonDay=food/(365/12)/p;
+    var perMeal=foodWeekly/(m*p);
+    document.getElementById("gOut").innerHTML=
+      '<div class="stat"><span>Weekly grocery budget</span><b>'+$(weekly)+'</b></div>'+
+      '<div class="stat"><span>Food per person, per day</span><b>'+$(perPersonDay)+'</b></div>'+
+      '<div class="stat"><span>Cost per meal, per person</span><b>'+$(perMeal)+'</b></div>'+
+      '<div class="stat"><span>Weekly, food only</span><b>'+$(foodWeekly)+'</b></div>';
+  }
+  ids.forEach(function(i){document.getElementById(i).addEventListener("input",calc);});
+  calc();
+})();
+</script>
+  <div class="no-print">
+    <div class="ad-slot no-print" aria-hidden="true"><!-- AD SLOT --></div>
+    <h2>How to use it</h2>
+    <ol><li>Enter what you spend (or want to spend) on groceries each month.</li><li>Enter how many people you feed.</li><li>Estimate meals eaten at home. Three meals a day, every day, is 21.</li><li>If your grocery trips include paper towels and cleaning supplies, enter roughly what share that is.</li><li>Write the weekly number at the top of your <a href="../printables/grocery-list.html">printable grocery list</a>.</li></ol>
+    <section class="supplies no-print"><h2>Supplies that make this easier</h2><ul><li><a href="https://www.amazon.com/s?k=meal+prep+containers+glass&tag=bumblepickleb-20" rel="sponsored noopener" target="_blank">Glass meal prep containers</a> cooking ahead saves money</li><li><a href="https://www.amazon.com/s?k=small+chest+freezer&tag=bumblepickleb-20" rel="sponsored noopener" target="_blank">Small chest freezer</a> lets you stock up when meat is on sale</li><li><a href="https://www.amazon.com/s?k=digital+kitchen+scale&tag=bumblepickleb-20" rel="sponsored noopener" target="_blank">Digital kitchen scale</a> </li></ul><p class="small">These are affiliate links. If you buy through them, FridgePaper may earn a small commission at no extra cost to you.</p></section>
+    <div class="ad-slot no-print" aria-hidden="true"><!-- AD SLOT --></div>
+    <h2>More free tools</h2>
+    <ul class="more"><li><a href="chore-chart-maker.html">Chore Chart Maker</a></li><li><a href="allowance-calculator.html">Allowance Calculator</a></li><li><a href="../printables/index.html">All free printables</a></li></ul>
+  </div>
+</article>
+</main>
+<footer class="site-footer no-print">
+  <p><b>FridgePaper</b> makes free printables and simple tools for busy families.</p>
+  <p><a href="../about.html">About</a> · <a href="../contact.html">Contact</a> · <a href="../privacy.html">Privacy Policy</a></p>
+  <p class="small">As an Amazon Associate, FridgePaper earns from qualifying purchases. © 2026 FridgePaper, a Pickled Bee Studios LLC site.</p>
+</footer>
+</body>
+</html>
