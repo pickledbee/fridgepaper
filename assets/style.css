@@ -151,3 +151,6 @@ table.chores td{text-align:center;vertical-align:middle}
 @media print{.sheet-grid > table.stretch{height:100%}}
 .sheet-grid.three .check{padding:13px 0;font-size:15px}
 .sheet-grid.three .line{border-bottom:1.5px solid #cfc8ba;height:34px}
+
+/* hero without illustration */
+.hero{grid-template-columns:1fr;max-width:760px}
