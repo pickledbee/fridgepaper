@@ -212,7 +212,7 @@ document.addEventListener("DOMContentLoaded",function(){
     btn.disabled=pbtn.disabled=true;msg.textContent="Making your PDF...";
     var job=html2pdf().set({margin:[38,40,38,40],filename:"fridgepaper-"+name+"-chore-chart.pdf",image:{type:"jpeg",quality:0.96},
       html2canvas:{scale:2.5,useCORS:true,width:816,height:1056,windowWidth:816,x:0,y:0,scrollX:0,scrollY:0,backgroundColor:"#ffffff"},
-      jsPDF:{unit:"px",format:[816,1056],orientation:"portrait",hotfixes:["px_scaling"]}}).from(clone);
+      jsPDF:{unit:"px",format:[816,1056],orientation:"portrait",hotfixes:["px_scaling"]}}).from(clone).toPdf().get("pdf").then(function(pdf){try{pdf.viewerPreferences({PrintScaling:"None",PickTrayByPDFSize:true,Duplex:"Simplex"});}catch(e){}});
     var done=mode==="print"
       ? job.outputPdf("bloburl").then(function(url){if(win){win.location.href=url;}else{window.location.href=url;}msg.textContent="Your chart opened in a new tab. Press print there.";})
       : job.save().then(function(){msg.textContent="";});
