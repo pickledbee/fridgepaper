@@ -154,3 +154,6 @@ table.chores td{text-align:center;vertical-align:middle}
 
 /* hero without illustration */
 .hero{grid-template-columns:1fr;max-width:760px}
+.hero{grid-template-columns:1fr 1.15fr;max-width:none}
+.hero-photo{width:100%;height:auto;border-radius:22px;box-shadow:0 18px 40px rgba(0,0,0,.12);display:block}
+@media (max-width:760px){.hero{grid-template-columns:1fr}}
