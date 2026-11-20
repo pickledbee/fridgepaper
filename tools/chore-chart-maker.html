@@ -43,7 +43,29 @@ Tidy my toys
 Practice piano</textarea></label>
   <p class="small wide">Icons are picked automatically from the words in each chore (bed, teeth, dog, table, homework, toys, trash, laundry, plants and more).</p>
 </div>
-<div class="print-bar no-print"><button class="btn" onclick="window.print()">Print or Save as PDF</button></div>
+<div class="print-bar no-print"><button class="btn" id="cPdf" type="button">Download PDF</button><button class="btn ghost" onclick="window.print()">Print</button><span class="small" id="cPdfMsg"></span></div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js" defer></script>
+<script>
+document.addEventListener("DOMContentLoaded",function(){
+  var btn=document.getElementById("cPdf"),msg=document.getElementById("cPdfMsg");
+  btn.addEventListener("click",function(){
+    if(!window.html2pdf){msg.textContent="Still loading, try again in a second.";return;}
+    var sheet=document.querySelector("#cSheet .fp-sheet");
+    var name=(document.getElementById("cName").value||"my").trim().replace(/[^a-z0-9]+/gi,"-").toLowerCase();
+    var clone=sheet.cloneNode(true);
+    clone.style.transform="none";clone.style.position="static";clone.style.boxShadow="none";clone.style.borderRadius="0";
+    var holder=document.createElement("div");
+    holder.style.cssText="position:absolute;left:0;top:0;width:816px;height:1056px;background:#fff;z-index:-1;overflow:hidden";
+    holder.appendChild(clone);document.body.appendChild(holder);
+    btn.disabled=true;msg.textContent="Making your PDF...";
+    html2pdf().set({margin:0,filename:"fridgepaper-"+name+"-chore-chart.pdf",image:{type:"jpeg",quality:0.96},
+      html2canvas:{scale:2.5,useCORS:true,width:816,height:1056,windowWidth:816,x:0,y:0,scrollX:0,scrollY:0,backgroundColor:"#ffffff"},
+      jsPDF:{unit:"px",format:[816,1056],orientation:"portrait",hotfixes:["px_scaling"]}}).from(clone).save()
+      .then(function(){msg.textContent="";},function(){msg.textContent="Sorry, that didn't work. Try Print instead.";})
+      .then(function(){holder.remove();btn.disabled=false;});
+  });
+});
+</script>
 <div id="cSheet"><div class="fp-frame"><div class="fp-sheet fp-chore"><span class="fp-mag tl" style="background:#F0564A"></span><span class="fp-mag tr" style="background:#3E8EDE"></span>
 <div class="fp-head">
   <div class="fp-doodle l"><svg class="ic" width="64" height="64" viewBox="0 0 32 32" aria-hidden="true"><path d="M16 4l3.6 7.4 8 1.1-5.8 5.6 1.4 8L16 22.3 8.8 26.1l1.4-8-5.8-5.6 8-1.1z" fill="#f6c62e" stroke="#2b2a33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
