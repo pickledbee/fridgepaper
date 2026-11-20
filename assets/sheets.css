@@ -145,3 +145,17 @@
   .fp-frame{width:auto;height:auto!important;margin:0 auto}
   .fp-sheet{width:816px!important;height:1056px!important;zoom:0.9;margin:0 auto;page-break-inside:avoid}
 }
+
+/* printing help */
+.print-help{background:#fffdf8;border:2px solid #e4dccb;border-radius:16px;padding:16px 20px 10px;margin:4px 0 20px}
+.ph-title{font-family:"Fraunces",Georgia,serif;font-weight:800;font-size:20px;margin-bottom:8px}
+.ph-steps{list-style:none;padding:0;margin:0}
+.ph-steps li{display:flex;gap:12px;align-items:flex-start;margin:0 0 10px;font-size:16px;line-height:1.5}
+.ph-num{flex:none;width:30px;height:30px;border-radius:50%;background:#F7922E;color:#fff;font-weight:800;display:flex;align-items:center;justify-content:center;font-size:16px;margin-top:-1px}
+.ph-steps li:nth-child(2) .ph-num{background:#6CC24A}.ph-steps li:nth-child(3) .ph-num{background:#3E8EDE}.ph-steps li:nth-child(4) .ph-num{background:#9B6BD3}
+.ph-chip{display:inline-block;background:#fff;border:2px solid #F7922E;border-radius:999px;padding:2px 12px;margin:6px 6px 0 0;font-size:15px}
+.ph-chip + .ph-chip{border-color:#6CC24A}
+.ph-more{font-size:15px;margin:4px 0 6px}
+.ph-steps.big li{font-size:18px}
+.ph-mock-wrap{margin:10px 0 24px}
+.ph-mock{max-width:100%;height:auto;display:block}
