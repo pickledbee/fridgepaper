@@ -58,7 +58,7 @@ document.addEventListener("DOMContentLoaded",function(){
     holder.style.cssText="position:absolute;left:0;top:0;width:816px;height:1056px;background:#fff;z-index:-1;overflow:hidden";
     holder.appendChild(clone);document.body.appendChild(holder);
     btn.disabled=true;msg.textContent="Making your PDF...";
-    html2pdf().set({margin:0,filename:"fridgepaper-"+name+"-chore-chart.pdf",image:{type:"jpeg",quality:0.96},
+    html2pdf().set({margin:[38,40,38,40],filename:"fridgepaper-"+name+"-chore-chart.pdf",image:{type:"jpeg",quality:0.96},
       html2canvas:{scale:2.5,useCORS:true,width:816,height:1056,windowWidth:816,x:0,y:0,scrollX:0,scrollY:0,backgroundColor:"#ffffff"},
       jsPDF:{unit:"px",format:[816,1056],orientation:"portrait",hotfixes:["px_scaling"]}}).from(clone).save()
       .then(function(){msg.textContent="";},function(){msg.textContent="Sorry, that didn't work. Try Print instead.";})
