@@ -12,7 +12,7 @@ To add a new pin:
 4. Commit pins/, pins.json and feeds/ together.
 
 There are two pin styles. The first style has a serif headline over a colored top band. The second style (files ending -2.png) is made by scripts/make_pins_v2.py from scripts/pins_v2.json, using headless Chrome and the Fredoka fonts: either the on-fridge photo with a colored headline panel, or a numbered tip list. Use the second style's layouts for new pins so that the two styles alternate.
-Pins are released slowly, about 3 a day. A pin whose date is later than today (Chicago time) stays out of the feeds until that day. A scheduled task runs every morning, rebuilds the feeds with scripts/build_feeds.py, and commits them if they changed. When you add new pins, give them dates after the last date already queued in pins.json, 3 per day, and send seasonal pins out before their season.
+Pins are released slowly, about 3 a day. A pin whose date is later than today (Chicago time) stays out of the feeds until that day. A GitHub Actions workflow (.github/workflows/daily-pins.yml) runs every morning, rebuilds the feeds with scripts/build_feeds.py, and commits them if they changed. When you add new pins, give them dates after the last date already queued in pins.json, 3 per day, and send seasonal pins out before their season.
 Give every pins.json entry a date, so that the pubDate of existing pins never changes when "updated" changes.
 
 Keep each pin's image file name unchanged after it is published. The file name is the item's guid, so renaming it makes Pinterest post it again.
