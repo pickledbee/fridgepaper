@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:media="http://search.yahoo.com/mrss/" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>FridgePaper: Family Routines and Goals</title>
+    <link>https://fridgepaper.co/</link>
+    <atom:link href="https://fridgepaper.co/feeds/family-routines-and-goals.xml" rel="self" type="application/rss+xml"/>
+    <description>Free printables from FridgePaper for the Family Routines and Goals board.</description>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 21 Nov 2026 12:00:00 +0000</lastBuildDate>
+    <item>
+      <title>Christmas Break Schedule for Kids at Home (Free Printable)</title>
+      <link>https://fridgepaper.co/printables/christmas-break-daily-schedule.html</link>
+      <guid isPermaLink="false">christmas-break-daily-schedule.png</guid>
+      <description>Kids home for two weeks? This free printable Christmas break daily schedule gives them a simple rhythm: 13 time blocks from wake-up to bedtime, a before-screens checklist, and 10 winter boredom busters.</description>
+      <pubDate>Sat, 21 Nov 2026 12:00:00 +0000</pubDate>
+      <enclosure url="https://fridgepaper.co/pins/christmas-break-daily-schedule.png" length="296505" type="image/png"/>
+      <media:content url="https://fridgepaper.co/pins/christmas-break-daily-schedule.png" medium="image" type="image/png"/>
+    </item>
+    <item>
+      <title>New Year 2027 Family Goals Planner (Free Printable)</title>
+      <link>https://fridgepaper.co/printables/new-year-family-goals.html</link>
+      <guid isPermaLink="false">new-year-family-goals.png</guid>
+      <description>Set New Year goals together as a family! Pick a family word for 2027, one goal for fun, health, money and home, a goal for each person, and a family adventure for every month. Free printable.</description>
+      <pubDate>Sat, 21 Nov 2026 12:00:00 +0000</pubDate>
+      <enclosure url="https://fridgepaper.co/pins/new-year-family-goals.png" length="282608" type="image/png"/>
+      <media:content url="https://fridgepaper.co/pins/new-year-family-goals.png" medium="image" type="image/png"/>
+    </item>
+    <item>
+      <title>How to Survive Christmas Break With Kids at Home</title>
+      <link>https://fridgepaper.co/blog/christmas-break-with-kids.html</link>
+      <guid isPermaLink="false">blog-christmas-break-with-kids.png</guid>
+      <description>Christmas break with kids at home doesn't have to mean chaos. A simple daily plan, a before-screens rule, chores that feel like a game, and boredom busters that work, plus free printables.</description>
+      <pubDate>Sat, 21 Nov 2026 12:00:00 +0000</pubDate>
+      <enclosure url="https://fridgepaper.co/pins/blog-christmas-break-with-kids.png" length="293192" type="image/png"/>
+      <media:content url="https://fridgepaper.co/pins/blog-christmas-break-with-kids.png" medium="image" type="image/png"/>
+    </item>
+  </channel>
+</rss>

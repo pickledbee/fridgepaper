@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:media="http://search.yahoo.com/mrss/" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>FridgePaper: Family Budget Printables</title>
+    <link>https://fridgepaper.co/</link>
+    <atom:link href="https://fridgepaper.co/feeds/family-budget-printables.xml" rel="self" type="application/rss+xml"/>
+    <description>Free printables from FridgePaper for the Family Budget Printables board.</description>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 21 Nov 2026 12:00:00 +0000</lastBuildDate>
+    <item>
+      <title>Free Printable Monthly Budget Planner (Simple, One Page)</title>
+      <link>https://fridgepaper.co/printables/monthly-budget-planner.html</link>
+      <guid isPermaLink="false">monthly-budget-planner.png</guid>
+      <description>A simple one-page monthly budget worksheet for families. List your income, plan each expense, then track what you actually spent. Free to print or save as a PDF.</description>
+      <pubDate>Sat, 21 Nov 2026 12:00:00 +0000</pubDate>
+      <enclosure url="https://fridgepaper.co/pins/monthly-budget-planner.png" length="275875" type="image/png"/>
+      <media:content url="https://fridgepaper.co/pins/monthly-budget-planner.png" medium="image" type="image/png"/>
+    </item>
+    <item>
+      <title>Grocery Budget Calculator: Per Week, Per Person, Per Meal</title>
+      <link>https://fridgepaper.co/tools/grocery-budget-calculator.html</link>
+      <guid isPermaLink="false">grocery-budget-calculator.png</guid>
+      <description>How much should groceries cost per meal? Enter your monthly grocery budget and family size, and this free calculator shows your weekly budget, daily cost per person, and cost per meal.</description>
+      <pubDate>Sat, 21 Nov 2026 12:00:00 +0000</pubDate>
+      <enclosure url="https://fridgepaper.co/pins/grocery-budget-calculator.png" length="116226" type="image/png"/>
+      <media:content url="https://fridgepaper.co/pins/grocery-budget-calculator.png" medium="image" type="image/png"/>
+    </item>
+    <item>
+      <title>12 Easy Ways to Lower Your Family Grocery Bill</title>
+      <link>https://fridgepaper.co/blog/lower-grocery-bill-family.html</link>
+      <guid isPermaLink="false">blog-lower-grocery-bill-family.png</guid>
+      <description>Spend less on groceries without clipping coupons all day. 12 practical tips for families, plus a free grocery budget calculator and a printable grocery list.</description>
+      <pubDate>Sat, 21 Nov 2026 12:00:00 +0000</pubDate>
+      <enclosure url="https://fridgepaper.co/pins/blog-lower-grocery-bill-family.png" length="70506" type="image/png"/>
+      <media:content url="https://fridgepaper.co/pins/blog-lower-grocery-bill-family.png" medium="image" type="image/png"/>
+    </item>
+    <item>
+      <title>How Much Allowance Should a Kid Get? Guide by Age</title>
+      <link>https://fridgepaper.co/blog/how-much-allowance-by-age.html</link>
+      <guid isPermaLink="false">blog-how-much-allowance-by-age.png</guid>
+      <description>How much allowance by age, how to split it into save, spend and give, and whether to tie it to chores. Simple guide plus a free allowance calculator.</description>
+      <pubDate>Sat, 21 Nov 2026 12:00:00 +0000</pubDate>
+      <enclosure url="https://fridgepaper.co/pins/blog-how-much-allowance-by-age.png" length="70567" type="image/png"/>
+      <media:content url="https://fridgepaper.co/pins/blog-how-much-allowance-by-age.png" medium="image" type="image/png"/>
+    </item>
+  </channel>
+</rss>

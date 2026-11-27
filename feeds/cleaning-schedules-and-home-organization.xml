@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:media="http://search.yahoo.com/mrss/" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>FridgePaper: Cleaning Schedules and Home Organization</title>
+    <link>https://fridgepaper.co/</link>
+    <atom:link href="https://fridgepaper.co/feeds/cleaning-schedules-and-home-organization.xml" rel="self" type="application/rss+xml"/>
+    <description>Free printables from FridgePaper for the Cleaning Schedules and Home Organization board.</description>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 21 Nov 2026 12:00:00 +0000</lastBuildDate>
+    <item>
+      <title>Free Printable Weekly Cleaning Schedule (15 Minutes a Day)</title>
+      <link>https://fridgepaper.co/printables/weekly-cleaning-schedule.html</link>
+      <guid isPermaLink="false">weekly-cleaning-schedule.png</guid>
+      <description>Stop spending all Saturday cleaning. This free printable cleaning schedule splits the work into quick daily tasks, one room a day, and a few monthly jobs. Print it and check off as you go.</description>
+      <pubDate>Sat, 21 Nov 2026 12:00:00 +0000</pubDate>
+      <enclosure url="https://fridgepaper.co/pins/weekly-cleaning-schedule.png" length="327341" type="image/png"/>
+      <media:content url="https://fridgepaper.co/pins/weekly-cleaning-schedule.png" medium="image" type="image/png"/>
+    </item>
+    <item>
+      <title>A 15-Minute Daily Cleaning Routine for Busy Families</title>
+      <link>https://fridgepaper.co/blog/15-minute-daily-cleaning-routine.html</link>
+      <guid isPermaLink="false">blog-15-minute-daily-cleaning-routine.png</guid>
+      <description>Keep the house clean in just 15 minutes a day. Daily basics, one room per day, and a short monthly list, with a free printable weekly cleaning schedule.</description>
+      <pubDate>Sat, 21 Nov 2026 12:00:00 +0000</pubDate>
+      <enclosure url="https://fridgepaper.co/pins/blog-15-minute-daily-cleaning-routine.png" length="72436" type="image/png"/>
+      <media:content url="https://fridgepaper.co/pins/blog-15-minute-daily-cleaning-routine.png" medium="image" type="image/png"/>
+    </item>
+  </channel>
+</rss>
