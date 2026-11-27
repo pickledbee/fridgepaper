@@ -9,6 +9,7 @@ import os
 import re
 from datetime import datetime, timezone
 from email.utils import format_datetime
+from zoneinfo import ZoneInfo
 from xml.sax.saxutils import escape
 
 SITE = "https://fridgepaper.co"
@@ -26,8 +27,16 @@ def main():
     updated = datetime.strptime(data.get("updated", "2026-01-01"), "%Y-%m-%d")
     default_date = updated.replace(hour=12, tzinfo=timezone.utc)
 
+    # Pins dated in the future wait in the queue; a daily scheduled run
+    # rebuilds the feeds so each day's pins appear on their date.
+    today = datetime.now(ZoneInfo("America/Chicago")).date()
+    if os.environ.get("FEED_DATE"):
+        today = datetime.strptime(os.environ["FEED_DATE"], "%Y-%m-%d").date()
+
     boards = {}
     for pin in data["pins"]:
+        if pin.get("date") and datetime.strptime(pin["date"], "%Y-%m-%d").date() > today:
+            continue
         boards.setdefault(pin["board"], []).append(pin)
 
     out_dir = os.path.join(ROOT, "feeds")
