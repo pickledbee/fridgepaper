@@ -207,3 +207,9 @@ table.chores td{text-align:center;vertical-align:middle}
 .hub-age{display:inline-block;background:#FFF0D6;color:#9a5a12;font-weight:800;font-size:14px;border-radius:999px;padding:3px 12px;margin:0}
 .hub-btns{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
 @media (max-width:640px){.hub-item{grid-template-columns:1fr}.hub-item img{max-width:260px;margin:auto}}
+.mail-box{background:var(--paper);border:2px solid var(--line);border-radius:var(--radius);padding:20px 24px;margin:20px 0;text-align:center}
+.mail-addr{font-size:24px;font-weight:800;margin:.2em 0 .6em;word-break:break-all;user-select:all}
+.mail-note{margin:.6em 0 0}
+.mail-or{font-weight:800;margin:1.4em 0 .5em}
+.mail-btns{display:flex;flex-wrap:wrap;gap:10px;justify-content:center}
+@media (max-width:640px){.mail-addr{font-size:19px;word-break:normal}}

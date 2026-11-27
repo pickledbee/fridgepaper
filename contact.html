@@ -36,7 +36,20 @@
 <main>
 
 <article class="post"><h1>Contact</h1>
-<p>Questions, printable requests, or spotted a mistake? Email <a href="mailto:fridgepaper.co@gmail.com">fridgepaper.co@gmail.com</a>. Every message is read.</p>
+<p>Questions, printable requests, or spotted a mistake? Send an email. Every message is read.</p>
+<div class="mail-box">
+  <p class="mail-addr">fridgepaper.co@gmail.com</p>
+  <button class="btn" type="button" id="copyMail">Copy email address</button>
+  <p class="small mail-note">Then paste it into the "To" line in your email.</p>
+  <p class="mail-or">Or open a new email right now:</p>
+  <p class="mail-btns"><a class="v-btn" href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=fridgepaper.co%40gmail.com&amp;su=Question+about+FridgePaper" target="_blank" rel="noopener">Gmail</a><a class="v-btn" href="https://outlook.live.com/mail/0/deeplink/compose?to=fridgepaper.co%40gmail.com&amp;subject=Question+about+FridgePaper" target="_blank" rel="noopener">Outlook / Hotmail</a><a class="v-btn" href="https://compose.mail.yahoo.com/?to=fridgepaper.co%40gmail.com&amp;subject=Question+about+FridgePaper" target="_blank" rel="noopener">Yahoo Mail</a><a class="v-btn" href="mailto:fridgepaper.co@gmail.com?subject=Question%20about%20FridgePaper">Email app on this device</a></p>
+</div>
+<script>
+document.getElementById('copyMail').addEventListener('click',function(){var b=this,a='fridgepaper.co@gmail.com';
+function done(){b.textContent='Copied!';setTimeout(function(){b.textContent='Copy email address'},2000)}
+if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(a).then(done,fb)}else fb();
+function fb(){var t=document.createElement('textarea');t.value=a;document.body.appendChild(t);t.select();try{document.execCommand('copy')}catch(e){}document.body.removeChild(t);done()}});
+</script>
 </article>
 </main>
 <footer class="site-footer no-print">
