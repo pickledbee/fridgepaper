@@ -6,7 +6,7 @@
     <atom:link href="https://fridgepaper.co/feeds/meal-planning-printables.xml" rel="self" type="application/rss+xml"/>
     <description>Free printables from FridgePaper for the Meal Planning Printables board.</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 21 Nov 2026 12:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 26 Nov 2026 12:00:00 +0000</lastBuildDate>
     <item>
       <title>Free Printable Weekly Meal Planner with Grocery List</title>
       <link>https://fridgepaper.co/printables/weekly-meal-planner.html</link>
@@ -33,6 +33,33 @@
       <pubDate>Sat, 21 Nov 2026 12:00:00 +0000</pubDate>
       <enclosure url="https://fridgepaper.co/pins/blog-family-meal-planning-30-minutes.png" length="68475" type="image/png"/>
       <media:content url="https://fridgepaper.co/pins/blog-family-meal-planning-30-minutes.png" medium="image" type="image/png"/>
+    </item>
+    <item>
+      <title>Weekly Meal Plan Template for Families (Free Printable with Grocery List)</title>
+      <link>https://fridgepaper.co/printables/weekly-meal-planner.html</link>
+      <guid isPermaLink="false">weekly-meal-planner-2.png</guid>
+      <description>Stop asking what's for dinner every night. Plan breakfast, lunch and dinner for the whole week on one colorful page, with a grocery list and a prep-ahead box built in. Free printable meal plan template to hang on the fridge.</description>
+      <pubDate>Thu, 26 Nov 2026 12:00:00 +0000</pubDate>
+      <enclosure url="https://fridgepaper.co/pins/weekly-meal-planner-2.png" length="425217" type="image/png"/>
+      <media:content url="https://fridgepaper.co/pins/weekly-meal-planner-2.png" medium="image" type="image/png"/>
+    </item>
+    <item>
+      <title>Printable Grocery Shopping List by Category (Free, With Budget Box)</title>
+      <link>https://fridgepaper.co/printables/grocery-list.html</link>
+      <guid isPermaLink="false">grocery-list-2.png</guid>
+      <description>Shop the store in order and stop doubling back. This free printable grocery shopping list is split into produce, dairy, meat, bakery, pantry, frozen, snacks and household, with a box to write your budget at the top.</description>
+      <pubDate>Thu, 26 Nov 2026 12:00:00 +0000</pubDate>
+      <enclosure url="https://fridgepaper.co/pins/grocery-list-2.png" length="605048" type="image/png"/>
+      <media:content url="https://fridgepaper.co/pins/grocery-list-2.png" medium="image" type="image/png"/>
+    </item>
+    <item>
+      <title>Easy Family Meal Planning for Beginners: 5 Steps, 30 Minutes</title>
+      <link>https://fridgepaper.co/blog/family-meal-planning-30-minutes.html</link>
+      <guid isPermaLink="false">blog-family-meal-planning-30-minutes-2.png</guid>
+      <description>New to meal planning? Plan a week of family dinners in 30 minutes: check the calendar, use what's in the pantry, pick theme nights, plan leftovers, and write the list. Free printable weekly meal planner included.</description>
+      <pubDate>Thu, 26 Nov 2026 12:00:00 +0000</pubDate>
+      <enclosure url="https://fridgepaper.co/pins/blog-family-meal-planning-30-minutes-2.png" length="101692" type="image/png"/>
+      <media:content url="https://fridgepaper.co/pins/blog-family-meal-planning-30-minutes-2.png" medium="image" type="image/png"/>
     </item>
   </channel>
 </rss>
